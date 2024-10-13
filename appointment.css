@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack header, main content, and footer */
+    min-height: 100vh; /* Ensure the body takes up full height */
+    background-color: #f5f5f5;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    flex-grow: 1; /* Allow the container to grow and fill the space */
+    margin: 20px auto; /* Center container with margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.calendar-section {
+    width: 60%;
+    padding: 20px;
+    background-color: #f0f4f8;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.calendar-header button {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calendar-header button:hover {
+    background-color: #495057;
+}
+
+.calendar-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.weekday {
+    width: calc(100% / 7);
+    text-align: center;
+    font-weight: bold;
+    color: #6c757d;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.day {
+    width: calc(100% / 7);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.day:hover {
+    background-color: #e2e6ea;
+}
+
+.empty {
+    background-color: transparent;
+    cursor: default;
+    box-shadow: none;
+}
+
+.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.appointment-section {
+    width: 40%;
+    padding: 20px;
+    background-color: white;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.time-slots {
+    list-style: none;
+}
+
+.time-slot {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.time-slot:hover {
+    background-color: #0056b3;
+}
+
+/* Schedule section styling */
+.schedule-section {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-section h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.schedule-section p {
+    font-size: 16px;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    width: 100%;
+}

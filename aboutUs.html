@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutUs.css">
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <h1>Our Team</h1>
+    </header>
+    <main>
+        <div class="group">
+            <div class="leader" onclick="showDetails('Rhoderick G. Azuelo Jr')">
+                <img src="img/rhods.jpg" alt="Rhoderick G. Azuelo Jr">
+                <span class="role">Leader / Programmer / Designer / Thinker</span>
+                <button class="member-button">Rhoderick G. Azuelo Jr</button>
+            </div>
+            <div class="members">
+                <div class="member" onclick="showDetails('James Karl Paraico')">
+                    <img src="img/par (1).jpg" alt="James Karl Paraico">
+                    <span class="role">Member / Designer / Programmer</span>
+                    <button class="member-button">James Karl Paraico</button>
+                </div>
+                <div class="member" onclick="showDetails('Jasen Suniega')">
+                    <img src="img/jasen.jpg" alt="Jasen Suniega">
+                    <span class="role">Member / Designer / Thinker</span>
+                    <button class="member-button">Jasen Suniega</button>
+                </div>
+                <div class="member" onclick="showDetails('Kent Zeroun')">
+                    <img src="img/ggg.png" alt="Kent Zeroun ">
+                    <span class="role">Member / Ideator</span>
+                    <button class="member-button">Kent Zeroun Belenson</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="member-details" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeDetails()">&times;</span>
+                <h2 id="member-name"></h2>
+                <p class="role" id="member-role"></p>
+                <p id="member-info"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 NDMU Team</p>
+    </footer>
+    <script src="aboutUs.js"></script>
+</body>
+</html>

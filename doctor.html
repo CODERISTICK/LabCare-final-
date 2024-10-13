@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="doctor.css">
+    <title>Find a Doctor</title>
+</head>
+<body>
+
+
+    <header>
+        <h1>Find a Doctor</h1>
+    </header>
+    <main>
+        <section class="doctor-list">
+            <h2>Available Doctors</h2>
+            <div class="doctor-row">
+                <div class="doctor" onclick="showDetails('Cardo Dalisay')">
+                    <h3>Dr. Cardo Dalisay</h3>
+                    <p>Specializes in: Blood Tests</p>
+                </div>
+                <div class="doctor" onclick="showDetails('Juan DelaCruz')">
+                    <h3>Dr. Juan DelaCruz</h3>
+                    <p>Specializes in: Urine & Blood Tests</p>
+                </div>
+            </div>
+            <div class="doctor-row">
+                <div class="doctor" onclick="showDetails('Juan Tamad')">
+                    <h3>Dr. Juan Tamad</h3>
+                    <p>Specializes in: MRI Scans & Ultrasound</p>
+                </div>
+                <div class="doctor" onclick="showDetails('Pedro Penduko')">
+                    <h3>Dr. Pedro Penduko</h3>
+                    <p>Specializes in: X-Ray Tests</p>
+                </div>
+            </div>
+            <div class="doctor-row">
+                <div class="doctor" onclick="showDetails('Rigor Dimagiba')">
+                    <h3>Dr. Rigor Dimagiba</h3>
+                    <p>Specializes in: MRI Scans</p>
+                </div>
+                <div class="doctor" onclick="showDetails('Tanggol Montegnegro')">
+                    <h3>Dr. Tanggol Montegnegro</h3>
+                    <p>Specializes in: X-Ray Tests</p>
+                </div>
+            </div>
+            <div class="doctor-row">
+                <div class="doctor" onclick="showDetails('Tito Sotto')">
+                    <h3>Dr. Tito Sotto</h3>
+                    <p>Specializes in: Ultrasound</p>
+                </div>
+            </div>
+        </section>
+        <div id="doctor-details" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeDetails()">&times;</span>
+                <h2 id="doctor-name"></h2>
+                <p id="doctor-specialty"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 NDMU LabCare</p>
+    </footer>
+    <script src="doctor.js"></script>
+</body>
+</html>

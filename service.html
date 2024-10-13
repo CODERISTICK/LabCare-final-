@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabCare Test Service</title>
+    <link rel="stylesheet" href="service.css">
+</head>
+<body>
+    <header>
+        <h1>NDMU LabCare SERVICE</h1>
+    </header>
+
+    <div class="container">
+        <h1 class="heading">LabCare Test Service</h1>
+        <div class="service-list">
+            <div class="service-item" onclick="openModal('urineModal')">
+                <div class="circle urine">
+                    <img src="img/urine.jpg" alt="Urine Test" />
+                </div>
+                <h2>Urine Test</h2>
+                <p>A urine test checks for various conditions, including infections and kidney disease.</p>
+            </div>
+            <div class="service-item" onclick="openModal('bloodModal')">
+                <div class="circle blood">
+                    <img src="img/blood.jpg" alt="Blood Test" />
+                </div>
+                <h2>Blood Test</h2>
+                <p>A blood test measures various substances in the blood and can help diagnose diseases.</p>
+            </div>
+            <div class="service-item" onclick="openModal('xrayModal')">
+                <div class="circle xray">
+                    <img src="img/x-ray.jpg" alt="X-ray" />
+                </div>
+                <h2>X-ray</h2>
+                <p>An X-ray is used to view the internal structures of the body, especially bones.</p>
+            </div>
+            <div class="service-item" onclick="openModal('mriModal')">
+                <div class="circle mri">
+                    <img src="img/mri-scan.jpg" alt="MRI Scan" />
+                </div>
+                <h2>MRI Scan</h2>
+                <p>An MRI creates detailed images of organs and tissues within the body.</p>
+            </div>
+            <div class="service-item" onclick="openModal('ultrasoundModal')">
+                <div class="circle ultrasound">
+                    <img src="img/ultrasound.jpg" alt="Ultrasound" />
+                </div>
+                <h2>Ultrasound</h2>
+                <p>An ultrasound uses sound waves to produce images of organs inside the body.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals for each test -->
+    <div id="urineModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('urineModal')">&times;</span>
+            <h2>Urine Test</h2>
+            <div class="modal-info">
+                <h3>Causes:</h3>
+                <p>Infections, kidney disease, diabetes.</p>
+                <h3>Recommendations:</h3>
+                <p>Stay hydrated, consult a healthcare professional.</p>
+                <h3>Home Remedies:</h3>
+                <p>Drink plenty of water, cranberry juice may help.</p>
+                <h3>What to Do:</h3>
+                <p>Follow your doctor’s instructions for the test.</p>
+                <h3>Treatment:</h3>
+                <p>Depends on the underlying cause; follow medical advice.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="bloodModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bloodModal')">&times;</span>
+            <h2>Blood Test</h2>
+            <div class="modal-info">
+                <h3>Causes:</h3>
+                <p>Various health conditions, deficiencies.</p>
+                <h3>Recommendations:</h3>
+                <p>Regular health check-ups, maintain a balanced diet.</p>
+                <h3>Home Remedies:</h3>
+                <p>Include iron-rich foods, stay hydrated.</p>
+                <h3>What to Do:</h3>
+                <p>Discuss results with your healthcare provider.</p>
+                <h3>Treatment:</h3>
+                <p>Based on specific deficiencies or conditions identified.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="xrayModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('xrayModal')">&times;</span>
+            <h2>X-ray</h2>
+            <div class="modal-info">
+                <h3>Causes:</h3>
+                <p>Fractures, infections, tumors.</p>
+                <h3>Recommendations:</h3>
+                <p>Consult a doctor for interpretation of results.</p>
+                <h3>Home Remedies:</h3>
+                <p>Rest, ice application for minor injuries.</p>
+                <h3>What to Do:</h3>
+                <p>Follow up with your healthcare provider.</p>
+                <h3>Treatment:</h3>
+                <p>Depends on the diagnosis; may include medications or physical therapy.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="mriModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('mriModal')">&times;</span>
+            <h2>MRI Scan</h2>
+            <div class="modal-info">
+                <h3>Causes:</h3>
+                <p>Detecting tumors, brain disorders, joint issues.</p>
+                <h3>Recommendations:</h3>
+                <p>Inform your doctor of any metal implants.</p>
+                <h3>Home Remedies:</h3>
+                <p>Stay calm, practice deep breathing during the procedure.</p>
+                <h3>What to Do:</h3>
+                <p>Follow pre-scan instructions carefully.</p>
+                <h3>Treatment:</h3>
+                <p>Based on the results; may involve surgery, medication, or therapy.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="ultrasoundModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('ultrasoundModal')">&times;</span>
+            <h2>Ultrasound</h2>
+            <div class="modal-info">
+                <h3>Causes:</h3>
+                <p>Pregnancy monitoring, diagnosing organ issues.</p>
+                <h3>Recommendations:</h3>
+                <p>Discuss results with your doctor.</p>
+                <h3>Home Remedies:</h3>
+                <p>Stay hydrated, eat light before the test.</p>
+                <h3>What to Do:</h3>
+                <p>Follow your doctor’s advice for follow-up.</p>
+                <h3>Treatment:</h3>
+                <p>Based on findings; may involve further testing or treatment.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NDMU LabCare</p>
+    </footer>
+
+    <script src="service.js"></script>
+</body>
+</html>

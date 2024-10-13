@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Calendar</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+    <header>
+        <h1>Appointment</h1> 
+    </header>
+
+    <div class="container">
+        <div class="calendar-section">
+            <div class="calendar-header">
+                <button id="prevMonth">&lt;</button>
+                <span id="monthYear"></span>
+                <button id="nextMonth">&gt;</button>
+            </div>
+            <div class="calendar-body">
+                <!-- Weekdays -->
+                <div class="weekdays">
+                    <div class="weekday">Mon</div>
+                    <div class="weekday">Tue</div>
+                    <div class="weekday">Wed</div>
+                    <div class="weekday">Thu</div>
+                    <div class="weekday">Fri</div>
+                    <div class="weekday">Sat</div>
+                    <div class="weekday">Sun</div>
+                </div>
+                <!-- Days -->
+                <div id="days" class="days"></div>
+            </div>
+        </div>
+
+        <div class="appointment-section">
+            <h2>Available Appointments</h2>
+            <ul id="availableTimes" class="time-slots">
+                <li>Select a date to see available times</li>
+            </ul>
+            <div class="schedule-section">
+                <h3>Your Schedule</h3>
+                <p id="selectedSchedule">No schedule selected</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NDMU LabCare</p>
+    </footer>
+    
+    <script src="appointment.js"></script>
+</body>
+</html>

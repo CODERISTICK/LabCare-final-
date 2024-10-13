@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabCare Location</title>
+    <link rel="stylesheet" href="location-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">LabCare Location</h1>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7928.41517695175!2d124.8329754173756!3d6.495381302617344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f81894a34e543f%3A0xf3131275609f854e!2sNotre%20Dame%20of%20Marbel%20University!5e0!3m2!1sen!2sph!4v1728702241234!5m2!1sen!2sph"
+                width="1000" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="clickable-marker" onclick="openModal()"></div>
+        </div>
+        <a href="index.html" class="go-back-button">Go Back</a> <!-- Changed to Go Back -->
+    </div>
+
+    <!-- Modal for the picture -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" src="img/clin.jpg" alt="LabCare Location">
+        <div class="caption">Notre Dame of Marbel University - LabCare</div>
+    </div>
+
+    <script src="location-script.js"></script>
+</body>
+</html>
